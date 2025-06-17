@@ -1,19 +1,17 @@
 using System;
 using RPG.Models.Players;
 
-namespace RPG.BattleSystem
+namespace RPG.BattleSystem;
+
+public class BattleManager
 {
-    public class BattleManager
+    public BattleManager()
     {
-        public BattleManager()
-        {
-        }
-
-        public void StartBattle(BasePlayer PlayerOne, BasePlayer PlayerTwo)
-        {
-            System.Console.WriteLine($"Starting Battle between {PlayerOne.Name} and {PlayerTwo.Name}!");
-            System.Console.ReadLine();
-        }
-
     }
+
+    public static void StartBattle(BasePlayer PlayerOne, BasePlayer PlayerTwo)
+    {
+        System.Console.WriteLine($"Starting Battle between {PlayerOne.Name} and {PlayerTwo.Name}!");
+    }
+
 }

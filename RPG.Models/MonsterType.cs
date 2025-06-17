@@ -1,20 +1,19 @@
 using System;
-namespace RPG.Models
+namespace RPG.Models;
+
+public enum MonsterType
 {
-    public enum MonsterType
-    {
-        Grass,
-        Fire,
-        Water,
-        Normal,
-        Ice,
-        Electric,
-        Flying,
-        Ground,
-        Rock,
-        Psychic,
-        Ghost,
-        Dragon,
-        Fairy
-    }
+    Grass,
+    Fire,
+    Water,
+    Normal,
+    Ice,
+    Electric,
+    Flying,
+    Ground,
+    Rock,
+    Psychic,
+    Ghost,
+    Dragon,
+    Fairy
 }

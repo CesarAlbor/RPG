@@ -8,11 +8,14 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        var battleManager = new BattleSystem.BattleManager();
+        var battleManager = new BattleManager();
 
-        var player1 = new BasePlayer();
-        var player2 = new Player();
+        var player1 = new Player("Player 1");
+        var player2 = new Player("Player 2");
 
-        System.Console.ReadLine();
+        player1.Echo();
+        player2.Echo();
+
+        battleManager.StartBattle(player1, player2);
     }
 }
